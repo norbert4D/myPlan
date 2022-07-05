@@ -1,0 +1,195 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"label_Vorname": {
+					"type": "text",
+					"text": "Vorname:",
+					"top": 74,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_Vorname": {
+					"type": "input",
+					"dataSource": "[MY_ADRESS:1]Vorname:2",
+					"top": 74,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_Nachname": {
+					"type": "text",
+					"text": "Nachname:",
+					"top": 111,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_Nachname": {
+					"type": "input",
+					"dataSource": "[MY_ADRESS:1]Nachname:3",
+					"top": 111,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_Adresse": {
+					"type": "text",
+					"text": "Adresse:",
+					"top": 148,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_Adresse": {
+					"type": "input",
+					"dataSource": "[MY_ADRESS:1]Adresse:4",
+					"top": 148,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_PLZ": {
+					"type": "text",
+					"text": "PLZ:",
+					"top": 185,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_PLZ": {
+					"type": "input",
+					"dataSource": "[MY_ADRESS:1]PLZ:5",
+					"top": 185,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_Ort": {
+					"type": "text",
+					"text": "Ort:",
+					"top": 222,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_Ort": {
+					"type": "input",
+					"dataSource": "[MY_ADRESS:1]Ort:6",
+					"top": 222,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_Mail": {
+					"type": "text",
+					"text": "Mail:",
+					"top": 259,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_Mail": {
+					"type": "input",
+					"dataSource": "[MY_ADRESS:1]Mail:7",
+					"top": 259,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_Telefon": {
+					"type": "text",
+					"text": "Telefon:",
+					"top": 296,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_Telefon": {
+					"type": "input",
+					"dataSource": "[MY_ADRESS:1]Telefon:8",
+					"top": 296,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"Button": {
+					"type": "button",
+					"top": 333,
+					"left": 220,
+					"width": 70,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 333,
+					"left": 300,
+					"width": 70,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"geometryStamp": 5,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

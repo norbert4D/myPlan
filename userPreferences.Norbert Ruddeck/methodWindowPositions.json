@@ -1,0 +1,20 @@
+{
+	"Sources/DatabaseMethods/onStartup.4dm": {
+		"left": 898,
+		"top": 766,
+		"width": 1000,
+		"height": 488
+	},
+	"Sources/Methods/startup.4dm": {
+		"left": 1395,
+		"top": 195,
+		"width": 1000,
+		"height": 488
+	},
+	"Sources/Methods/00_Norbert.4dm": {
+		"left": 155,
+		"top": 191,
+		"width": 1058,
+		"height": 470
+	}
+}

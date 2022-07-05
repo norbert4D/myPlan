@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="myPlan" uuid="64ED0583EE5642458F1CFB7239AA8C0C" collation_locale="de">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="MY_ADRESS" uuid="12FE5F38FE9D40109AD1105FF864E39A" id="1">
+		<field name="UUID" uuid="F2A6DBD63B464E9A990A8497CFB0D97E" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="Vorname" uuid="B36C748705624FDEAF306A4B20104598" type="10" limiting_length="255" id="2"/>
+		<field name="Nachname" uuid="33DF83D060F74DEDAB97AD7D5E51F8D8" type="10" limiting_length="255" id="3">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="Adresse" uuid="F73622B5F833498091556433012E277D" type="10" limiting_length="255" id="4">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="PLZ" uuid="86A4C0D3BF26412DA3EFD9D6D75DF36B" type="10" limiting_length="255" id="5">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="Ort" uuid="BF3BC0A3A2C64EAB8A30EDF5425447B3" type="10" limiting_length="255" id="6">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="Mail" uuid="9451FF3A5BB54D46BD4271E907205D60" type="10" limiting_length="255" id="7">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="Telefon" uuid="D407429F1B784D7F84111502CD194761" type="10" limiting_length="255" id="8">
+			<field_extra multi_line="false"/>
+		</field>
+		<primary_key field_name="UUID" field_uuid="F2A6DBD63B464E9A990A8497CFB0D97E"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="10">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="220.01953125" top="69.46484375" width="221.5" height="256.515625"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="MY_APPOINTMENT" uuid="33A6232C82FA4B79806A6132AD9FFF83" id="2">
+		<field name="UUID" uuid="2A5FD19DF5CD49CF85EC69FB4F7AB7BF" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="Datum" uuid="07A801C15B9C4620A57217BA12EAB83D" type="8" id="2"/>
+		<field name="Start" uuid="F2BD3349F6954E7880AD58E4A3B52DB1" type="9" id="3">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="Stop" uuid="BFE7C25B89074D8DB269F935008CDDD6" type="9" id="4">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="Kategorie" uuid="D965323BDBFE4A15976A9B4C42D2F3FD" type="10" limiting_length="255" id="5"/>
+		<field name="Status" uuid="BEA70E43D68441A8A705D75F69EA387B" type="10" limiting_length="255" id="6">
+			<field_extra multi_line="false"/>
+		</field>
+		<primary_key field_name="UUID" field_uuid="2A5FD19DF5CD49CF85EC69FB4F7AB7BF"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="11">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="567.8125" top="69.03125" width="215.22265625" height="276.8125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<relation uuid="85C3FFA2C347463ABBC8911318EB1634" name_Nto1="Termine_Adresse" name_1toN="Adresse_Termine" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="2A5FD19DF5CD49CF85EC69FB4F7AB7BF" name="UUID">
+				<table_ref uuid="33A6232C82FA4B79806A6132AD9FFF83" name="MY_APPOINTMENT"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="F2A6DBD63B464E9A990A8497CFB0D97E" name="UUID">
+				<table_ref uuid="12FE5F38FE9D40109AD1105FF864E39A" name="MY_ADRESS"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<index kind="regular" unique_keys="true" uuid="D7A329BC09E5499DA4D686A69629ADC3" type="7">
+		<field_ref uuid="2A5FD19DF5CD49CF85EC69FB4F7AB7BF" name="UUID">
+			<table_ref uuid="33A6232C82FA4B79806A6132AD9FFF83" name="MY_APPOINTMENT"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="FA551D2D53544BC8B9911D336D9499FF" type="7">
+		<field_ref uuid="F2A6DBD63B464E9A990A8497CFB0D97E" name="UUID">
+			<table_ref uuid="12FE5F38FE9D40109AD1105FF864E39A" name="MY_ADRESS"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0">
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>

@@ -1,0 +1,37 @@
+{
+	"editors": [
+		{
+			"type": "method",
+			"id": 2147483647,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "00_Norbert"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483646,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "startup"
+			}
+		},
+		{
+			"type": "explorer"
+		},
+		{
+			"type": "form",
+			"id": 646,
+			"table": 1,
+			"formName": "Eingabe"
+		},
+		{
+			"type": "toolbox"
+		},
+		{
+			"type": "form",
+			"id": 645,
+			"formName": "Planer"
+		}
+	]
+}
