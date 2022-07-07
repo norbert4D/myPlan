@@ -16,5 +16,23 @@
 		"top": 191,
 		"width": 1058,
 		"height": 470
+	},
+	"Sources/Forms/Planer/ObjectMethods/Datepicker.4dm": {
+		"left": 1088,
+		"top": 164,
+		"width": 1314,
+		"height": 1157
+	},
+	"Sources/Forms/Planer/ObjectMethods/Clock.4dm": {
+		"left": 1070,
+		"top": 646,
+		"width": 1069,
+		"height": 579
+	},
+	"Sources/Forms/Planer/method.4dm": {
+		"left": 1070,
+		"top": 646,
+		"width": 1069,
+		"height": 579
 	}
 }

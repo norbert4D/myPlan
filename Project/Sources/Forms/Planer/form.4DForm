@@ -28,7 +28,7 @@
 		"onTimer",
 		"onBoundVariableChange"
 	],
-	"windowTitle": "window title",
+	"windowTitle": "Start",
 	"destination": "detailScreen",
 	"pages": [
 		{
@@ -61,16 +61,47 @@
 							}
 						}
 					]
+				},
+				"Datepicker": {
+					"type": "subform",
+					"top": 30,
+					"left": 269,
+					"width": 168,
+					"height": 190,
+					"dataSource": "vDate",
+					"dataSourceTypeHint": "date",
+					"detailForm": "DatePicker",
+					"hideFocusRing": true,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/Datepicker.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Eingabe": {
+					"type": "input",
+					"left": 269,
+					"top": 232,
+					"width": 168,
+					"height": 17,
+					"dataSource": "vDate",
+					"enterable": false,
+					"borderStyle": "none"
 				}
 			}
 		}
 	],
-	"geometryStamp": 2,
+	"geometryStamp": 11,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
 		"views": {
 			"View 1": {}
 		}
-	}
+	},
+	"method": "method.4dm"
 }

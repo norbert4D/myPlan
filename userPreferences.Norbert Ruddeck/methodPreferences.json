@@ -25,5 +25,32 @@
 		"folding": [],
 		"bookmarks": [],
 		"stamp": "2022-07-05T15:03:48.153Z"
+	},
+	"Sources/Forms/Planer/ObjectMethods/Datepicker.4dm": {
+		"startSelection": 9,
+		"endSelection": 9,
+		"firstSelectedLine": 72,
+		"lastSelectedLine": 72,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2022-07-07T14:24:04.957Z"
+	},
+	"Sources/Forms/Planer/ObjectMethods/Clock.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 21,
+		"lastSelectedLine": 21,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2022-07-07T14:18:19.491Z"
+	},
+	"Sources/Forms/Planer/method.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2022-07-07T14:29:38.549Z"
 	}
 }
