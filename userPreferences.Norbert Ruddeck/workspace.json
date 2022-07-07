@@ -1,6 +1,12 @@
 {
 	"editors": [
 		{
+			"type": "toolbox"
+		},
+		{
+			"type": "structure"
+		},
+		{
 			"type": "method",
 			"id": 2147483647,
 			"codeDescriptor": {
@@ -24,9 +30,6 @@
 			"id": 220,
 			"table": 1,
 			"formName": "Eingabe"
-		},
-		{
-			"type": "toolbox"
 		},
 		{
 			"type": "form",
